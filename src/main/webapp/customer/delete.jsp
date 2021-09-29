@@ -20,21 +20,21 @@
         <div class="form-row">
             <div class="col-md-6 mb-3">
                 <label for="validationCustom01">Full Name</label>
-                <input type="text" class="form-control" name="fullName" id="validationCustom01" value="${customer.fullName}" required>
+                <input type="text" class="form-control" name="fullName" id="validationCustom01" value="${customer.fullName}" readonly>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationCustom02">Email</label>
-                <input type="text" class="form-control" name="email" id="validationCustom02" value="${customer.email}" required>
+                <input type="text" class="form-control" name="email" id="validationCustom02" value="${customer.email}" readonly>
             </div>
         </div>
         <div class="form-row">
             <div class="col-md-6 mb-3">
                 <label for="validationCustom03">Phone</label>
-                <input type="text" class="form-control" name="phone" id="validationCustom03" value="${customer.phone}" required>
+                <input type="text" class="form-control" name="phone" id="validationCustom03" value="${customer.phone}" readonly>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationCustom04">Address</label>
-                <input type="text" class="form-control" name="address" id="validationCustom04" value="${customer.address}" required>
+                <input type="text" class="form-control" name="address" id="validationCustom04" value="${customer.address}" readonly>
             </div>
         </div>
         <button class="btn btn-primary" type="submit">Delete</button>

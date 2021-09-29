@@ -134,10 +134,7 @@ public class CustomerServlet extends HttpServlet {
 
     private void showDeleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        customerDAO.deleteCustomer(id);
-
-        List<Customer> customerList = customerDAO.selectAllCustomer();
-        request.setAttribute("customer", customerList);
+        request.setAttribute("customer", customerDAO.selectCustomerById(id));
         request.setAttribute("message_delete", "User has been deleted");
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/delete.jsp");
         dispatcher.forward(request, response);
